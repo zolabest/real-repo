@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Information Form</title>
+    <style>
+        .required::after {
+            content: " *";
+            color: red;
+        }
+    </style>
+    <!-- You would include JavaScript here to dynamically update the dropdowns -->
+</head>
+<body>
+    <form action="submit-form.php" method="post">
+        <!-- Existing fields -->
+        
+        <div>
+            <label for="country" class="required">Country:</label>
+            <br>
+            <select id="country" name="country" required onchange="updateStates()">
+                <option value="">Please select</option>
+                <!-- Example countries -->
+                <option value="US">United States</option>
+                <option value="CA">Canada</option>
+                <option value="GB">United Kingdom</option>
+                <!-- You would programmatically populate this list with all countries -->
+            </select>
+        </div>
+
+        <div>
+            <label for="state" class="required">State/Province:</label>
+            <br>
+            <select id="state" name="state" required onchange="updateCities()">
+                <option value="">Please select</option>
+                <!-- States or provinces will be dynamically loaded based on the country selected -->
+            </select>
+        </div>
+
+        <div>
+            <label for="city" class="required">City:</label>
+            <br>
+            <select id="city" name="city" required>
+                <option value="">Please select</option>
+                <!-- Cities will be dynamically loaded based on the state selected -->
+            </select>
+        </div>
+
+        <!-- Remaining fields -->
+
+        <input type="submit" value="Submit">
+    </form>
+
+    <script>
+        // Example JavaScript functions that you would need to define to dynamically update the content
+        function updateStates() {
+            // Logic to update states based on the selected country
+        }
+        
+        function updateCities() {
+            // Logic to update cities based on the selected state
+        }
+    </script>
+</body>
+</html>
