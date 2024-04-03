@@ -1,0 +1,27 @@
+/* General styles for sections */
+.section {
+    margin: 20px 0;
+}
+
+/* Custom highlight style */
+.highlight {
+    background-color: yellow; /* Example highlight color */
+    color: black; /* Text color for highlighted text */
+    padding: 0 5px;
+}
+
+/* Background color with white text */
+.bg-color {
+    background-color: #007bff; /* Example background color */
+    color: white; /* White text color */
+    padding: 10px;
+}
+
+/* Background image with white text */
+.bg-image {
+    background-image: url('background-image1.jpg'); /* Path to the background image */
+    color: red; /* red text color */
+    padding: 10px;
+    background-size: cover; /* Cover the entire area */
+    background-position: center; /* Center the background image */
+}
